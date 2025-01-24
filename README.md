@@ -5,9 +5,9 @@
 
 ## Contents
 - [Overview](##Overview)
-- [Running the Code](##Running the Code)
+- [Running the Code](##Running-the-Code)
   - [Scraping](###Scraping) --TODO: change to real name
-  - [Profile Score Calculation](###Profile Score Calculation)
+  - [Profile Score Calculation](###Profile-Score-Calculation)
   - [Project](###Project) --TODO: change to more informative name
 
 
