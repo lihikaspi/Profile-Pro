@@ -20,7 +20,10 @@
 
 
 ### Profile Score Calculation
+The code calculates the Profile Score for User Profiles and Company Profiles based on existign column and poplurity of the field they work in.
+At the end, the code saves two parquet files (one for users and one for companies) with all the original columns of the profiles and a new column 'profile_score'
 
+**to run the code:** change file paths in cells 11 and TBD to desired paths to save new datasets of users and companies containing the respective scores
 
 ### Project
 
