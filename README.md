@@ -29,6 +29,7 @@ For each notebook description we added the cells numbers where you'll need to ch
 
 ### Scraping
 The code scrapes the website *indeed.com* for the number of result you get by searching a job and location 
+--TODO: change according to what lior did
 
 **To run the code:** change file path in cell **TBD** to desired path to save the scraped data
 
