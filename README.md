@@ -15,8 +15,8 @@
 - [Running The Code](##Running-The-Code)
   - [Metajob Classification](###Metajob-Classification)
   - [Scraping](###Scraping)
-  - [Data Preprocessing](###Data-Preprocessing)
   - [Profile Score Calculation](###Profile-Score-Calculation)
+  - [Data Preprocessing](###Data-Preprocessing)
   - [Profile Pro](###Profile-Pro) 
 
 
@@ -43,7 +43,7 @@ At the end, the code saves two parquet files (one for users and one for companie
 
 **To run the code:** 
 1. change file paths in cell **4** to the paths were the profiles and companies datasets and scraped sata you saved in the "Scraping" notebook --TODO: change to real name 
-2. change file paths in cells **11** and **TBD** to desired paths to save new datasets of users and companies containing the respective scores
+2. change file paths in cells **TBD** and **TBD** to desired paths to save new datasets of users and companies containing the respective scores
 
 ### Data Preprocessing
 The code takes the dataframe containing the profile score and prepares a new vector column to train the model on
