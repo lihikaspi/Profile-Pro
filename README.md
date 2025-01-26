@@ -13,26 +13,29 @@
 ## Contents
 - [Overview](##Overview)
 - [Running The Code](##Running-The-Code)
-  - [Scraping](###Scraping) --TODO: change to real name
+  - [Jobs and Locations](###Jobs-and-Locations)
+  - [Scraping](###Scraping)
   - [Data Preprocessing](###Data-Preprocessing)
   - [Profile Score Calculation](###Profile-Score-Calculation)
   - [Profile Pro](###Profile-Pro) 
-
 
 
 ## Overview
 The Project aims to help you optimize your LinkedIn profile ...
 
 ## Running The Code
-The project contains 4 Jupyter notebooks that should be ran in this specified order since files saved by one notebook are needed for the next one. <br>
+The project contains a python file and 4 Jupyter notebooks that should be ran in this specified order since files saved by one notebook are needed for the next one. <br>
 For each notebook description we added the cells numbers where you'll need to change the file paths in order to run the code.
 
+### Jobs and Location
+The code taked the job titles and positions from the user profiles and classifies them into 20 "meta jobs" to be used for the scarping process
+
+**To run the code:** change file path in cell **TBD** to desired path to save the classified data
+
 ### Scraping
-The code scrapes the website *indeed.com* for the number of result you get by searching a job and location 
---TODO: change according to what lior did
+The code taked the 20 meta jobs created in the "Jobs_and_Locations" notebook and scrapes the job search engine website *indeed.com* for the number of result you get by searching every pair of meta job and location 
 
-**To run the code:** change file path in cell **TBD** to desired path to save the scraped data
-
+**To run the code:** IDK
 
 ### Profile Score Calculation
 The code calculates the Profile Score for User Profiles and Company Profiles based on existign column and poplurity of the field they work in.
