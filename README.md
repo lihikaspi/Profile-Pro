@@ -6,6 +6,10 @@
 <p align="center">
   <img src="Photos/linkedin_photo.png" alt="Logo" width="300" height="300">
 
+
+<p align="center">
+  <img src="Photos/linkedin_optimizer.jpeg" alt="Logo" width="500" height="300">
+
 ## Contents
 - [Overview](##Overview)
 - [Running The Code](##Running-The-Code)
