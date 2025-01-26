@@ -13,7 +13,7 @@
 ## Contents
 - [Overview](##Overview)
 - [Running The Code](##Running-The-Code)
-  - [Jobs and Locations](###Jobs-and-Locations)
+  - [Metajob Classification](###Metajob-Classification)
   - [Scraping](###Scraping)
   - [Data Preprocessing](###Data-Preprocessing)
   - [Profile Score Calculation](###Profile-Score-Calculation)
@@ -27,13 +27,13 @@ The Project aims to help you optimize your LinkedIn profile ...
 The project contains a python file and 4 Jupyter notebooks that should be ran in this specified order since files saved by one notebook are needed for the next one. <br>
 For each notebook description we added the cells numbers where you'll need to change the file paths in order to run the code.
 
-### Jobs and Location
-The code taked the job titles and positions from the user profiles and classifies them into 20 "meta jobs" to be used for the scarping process
+### Metajob Classification
+The code taked the job titles and positions from the user profiles and classifies them into 20 "metajobs" to be used for the scarping process
 
-**To run the code:** change file path in cell **TBD** to desired path to save the classified data
+**To run the code:** change file path in cell **15** to desired path to save the classified data
 
 ### Scraping
-The code taked the 20 meta jobs created in the "Jobs_and_Locations" notebook and scrapes the job search engine website *indeed.com* for the number of result you get by searching every pair of meta job and location 
+The code taked the 20 metajobs created in the "Jobs_and_Locations" notebook and scrapes the job search engine website *indeed.com* for the number of result you get by searching every pair of meta job and location 
 
 **To run the code:** IDK
 
