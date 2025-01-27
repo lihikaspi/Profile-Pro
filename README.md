@@ -21,7 +21,8 @@
 
 
 ## Overview
-The Project aims to help you optimize your LinkedIn profile ...
+The Project aims to help you optimize your LinkedIn profile <br> 
+We 
 
 ## Running The Code
 The project contains a python file and 4 Jupyter notebooks that should be ran in this specified order since files saved by one notebook are needed for the next one. <br>
