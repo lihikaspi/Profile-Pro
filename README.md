@@ -10,36 +10,36 @@
 <p align="center">
   <img src="Photos/linkedin_optimizer.jpeg" alt="Logo" width="500" height="300">
 
-## Contents
-- [Overview](##Overview)
-- [Running The Code](##Running-The-Code)
-  - [Metajob Classification](###Metajob-Classification)
-  - [Scraping](###Scraping)
-  - [Profile Score Calculation](###Profile-Score-Calculation)
-  - [Data Preprocessing](###Data-Preprocessing)
-  - [GPT2 Fine Tuning](###GPT2-Fine-Tuning)
-  - [Profile Pro](###Profile-Pro) 
+# Contents
+- [Overview](#Overview)
+- [Running The Code](#Running-The-Code)
+  - [Metajob Classification](##Metajob-Classification)
+  - [Scraping](##Scraping)
+  - [Profile Score Calculation](##Profile-Score-Calculation)
+  - [Data Preprocessing](##Data-Preprocessing)
+  - [GPT2 Fine Tuning](##GPT2-Fine-Tuning)
+  - [Profile Pro](##Profile-Pro) 
 
 
-## Overview
+# Overview
 The Project aims to help you optimize your LinkedIn profile <br> 
 We 
 
-## Running The Code
+# Running The Code
 The project contains a python file and 4 Jupyter notebooks that should be ran in this specified order since files saved by one notebook are needed for the next one. <br>
 For each notebook description we added the cells numbers where you'll need to change the file paths in order to run the code.
 
-### Metajob Classification
+## Metajob Classification
 The code taked the job titles and positions from the user profiles and classifies them into 20 "metajobs" to be used for the scarping process
 
 **To run the code:** change file path in cell **15** to desired path to save the classified data
 
-### Scraping
+## Scraping
 The code taked the 20 metajobs created in the "Jobs_and_Locations" notebook and scrapes the job search engine website *indeed.com* for the number of result you get by searching every pair of meta job and location 
 
 **To run the code:** IDK
 
-### Profile Score Calculation
+## Profile Score Calculation
 The code calculates the Profile Score for User Profiles and Company Profiles based on existign column and poplurity of the field they work in.
 At the end, the code saves two parquet files (one for users and one for companies) with all the original columns of the profiles and a new column 'profile_score'
 
@@ -47,7 +47,7 @@ At the end, the code saves two parquet files (one for users and one for companie
 1. change file paths in cell **4** to the paths were the profiles and companies datasets and scraped sata you saved in the "Scraping" notebook --TODO: change to real name 
 2. change file paths in cells **TBD** and **TBD** to desired paths to save new datasets of users and companies containing the respective scores
 
-### Data Preprocessing
+## Data Preprocessing
 The code takes the dataframe containing the profile score and prepares a new vector column to train the model on
 
 **To run the code:** 
@@ -55,7 +55,7 @@ The code takes the dataframe containing the profile score and prepares a new vec
 2. change file path in cell **12** to desired path to save the processed data
 
 
-### GPT2 Fine Tuning
+## GPT2 Fine Tuning
 The code fine tunes a GPT2 model on the existing 'about' sections of good profiles and generate new 'about' section for the other profiles (those that don't have it and the bad profiles who do have)
 
 **To run the code:** 
@@ -63,7 +63,7 @@ The code fine tunes a GPT2 model on the existing 'about' sections of good profil
 2. change file path in cell **TBD** to the desired path where you want to save the fine-tuned model
 
 
-### Profile Pro
+## Profile Pro
 The code trains and evaluates the score-predicting model, offers suggestion for the bad profiles and re-evaluates the changed profiles
 
 **To run the code:** change the file paths in cell **TBD** to the path where you saved the processed dataset from the "Data_Preprocessing" notebook
