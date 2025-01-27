@@ -17,6 +17,7 @@
   - [Scraping](###Scraping)
   - [Profile Score Calculation](###Profile-Score-Calculation)
   - [Data Preprocessing](###Data-Preprocessing)
+  - [GPT2 Fine Tuning](###GPT2-Fine-Tuning)
   - [Profile Pro](###Profile-Pro) 
 
 
@@ -54,8 +55,16 @@ The code takes the dataframe containing the profile score and prepares a new vec
 2. change file path in cell **12** to desired path to save the processed data
 
 
+### GPT2 Fine Tuning
+The code fine tunes a GPT2 model on the existing 'about' sections of good profiles and generate new 'about' section for the other profiles (those that don't have it and the bad profiles who do have)
+
+**To run the code:** 
+1. change file path in cell **2** to the path were you saved the profiles_with_scores.parquet file from the "Profile_score_calculation" notebook
+2. change file path in cell **TBD** to the desired path where you want to save the fine-tuned model
+
+
 ### Profile Pro
-The code trains and evaluates the score-predicting model and then offers suggestion for the bad profiles
+The code trains and evaluates the score-predicting model, offers suggestion for the bad profiles and re-evaluates the changed profiles
 
 **To run the code:** change the file paths in cell **TBD** to the path where you saved the processed dataset from the "Data_Preprocessing" notebook
 
