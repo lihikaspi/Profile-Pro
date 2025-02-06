@@ -8,12 +8,12 @@
 # Contents
 - [Overview](#Overview)
 - [Running The Code](#Running-The-Code)
-  - [Scraping](##Scraping)
-  - ["Meta-Job" Classification](##"Meta-Job"-Classification)
-  - [Profile Score Calculation](##Profile-Score-Calculation)
-  - [Data Preprocessing](##Data-Preprocessing)
-  - [LLM Prompt Engineering](##LLM-Promp-Engineering)
-  - [Profile Pro](##Profile-Pro) 
+  - [Scraping](#Scraping)
+  - ["Meta-Job" Classification](#"Meta-Job"-Classification)
+  - [Profile Score Calculation](#Profile-Score-Calculation)
+  - [Data Preprocessing](#Data-Preprocessing)
+  - [LLM Prompt Engineering](#LLM-Promp-Engineering)
+  - [Profile Pro](#Profile-Pro) 
 
 
 # Overview
