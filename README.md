@@ -17,8 +17,8 @@
 
 
 # Overview
-The Project aims to help you optimize your LinkedIn profile <br> 
-We provide a service that allows users to monitor their profiles' success using AI-Powered tools.
+Our Project aims to help you optimize your LinkedIn profile! <br> 
+We provide a service that allows users to monitor their profiles' success using AI-Powered tools. <br>
 Our service helps your profile stand out and  
 
 
@@ -43,7 +43,7 @@ The code calculates the Profile Score for user profiles based on existing column
 At the end, the code saves two parquet files (one for users and one for companies) with all the original columns of the profiles and a new column 'profile_score'
 
 **File paths to change:** <br>
-Input - cell 3: paths to the profiles dataset, to the job clasifications parquet saved in the "Metajobs classification" notebook, and the scraped data.  <br> 
+Input - cell 3: paths to the profiles dataset, to the job clasifications parquet saved in the "Metajobs_classification" notebook, and the scraped data.  <br> 
 Output - cell 18: path to the the parquet file containing the original profiles dataset and an additional column of the numeric profile score
 
 ## Data Preprocessing
@@ -51,7 +51,7 @@ The code takes the dataframe containing the profile scores and prepares a new fi
 
 **File paths to change:** <br>
 Input - cell 2: path to the profile scores parquet saved in the "profiles_score_calculation" notebook.  <br> 
-Output - cell **TBD**: path to the the parquet file containing the features vectors
+Output - cell 8: path to the the parquet file containing the features vectors
 
 ## "about" Section Optimization
 IDK
@@ -61,5 +61,5 @@ The code trains and evaluates the score classification model, offers suggestions
 
 **File paths to change:** <br>
 Input - cell 4: path to the profiles dataset, to the preprocessed data saved in the "data_preprocessing" notebook, and to the new and optimized "about" sections. <br> 
-Output - cell **TBD**: path to the the parquet file containing the features vectors
+Output - cell **TBD**: path to the the parquet file containing the suggestion for each user
 
