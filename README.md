@@ -17,7 +17,7 @@
 
 
 # Overview
-Our project focuses on how to improve our LinkedIn profile to appeal to more people and, specifically, companies, job recruiters, and future investors.
+Our project focuses on how to improve a LinkedIn profile to appeal to more people and, specifically, companies, job recruiters, and future investors. <br>
 We provide a service that allows users to monitor their profiles' success using AI-Powered tools. <br>
 *Profile Pro* is a tool that analyzes an existing LinkedIn profile and suggests changes that could make the profile more informative about the person behind it by suggesting changes to various fields in the profile.
 
@@ -65,6 +65,6 @@ The code trains and evaluates the score classification model, offers suggestions
 
 **File paths to change:** <br>
 Input - cell 4: path to the profiles dataset and to the preprocessed data saved in the "data_preprocessing" notebook <br>
-Saving and imporoting the classification model - cells 12 and 17: path to save the trained multilayer perceptron model <br>
+Saving and loading the classification model - cells 12 and 17: path to save the trained multilayer perceptron model <br>
 Output - cell **26 PROBABLY**: path to the the parquet file containing the suggestion for each user.
 
