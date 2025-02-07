@@ -74,9 +74,8 @@ Loading the classification model - cell 14: path to the trained multilayer perce
 The code trains and evaluates the score classification model, offers suggestions for the bad profiles and re-evaluates the changed and optimized profiles profiles
 
 **File paths to change:** <br>
-Input - cell 4: path to the profiles dataset and to the preprocessed data saved in the "data_preprocessing" notebook <br>
-Saving and loading the classification model - cells 12 and 17: path to save the trained multilayer perceptron model <br>
-Output - cell **26 PROBABLY**: path to the the parquet file containing the suggestion for each user.
+Input - cell 4: path to the profiles dataset and to the preprocessed data saved in the "data_preprocessing" notebook. <br>
+Saving and loading the classification model - cells 12 and 17: path to save the trained multilayer perceptron model.
 
 # Evaluating New Profiles
 This part of the project handles the optimization of new profiles and contains 2 python files and a Jupyter notebook.
