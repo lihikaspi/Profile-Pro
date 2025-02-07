@@ -22,7 +22,7 @@
     
 
 # Overview
-Our project focuses on how to improve a LinkedIn profile to appeal to more people and, specifically, companies, job recruiters, and future investors. <br>
+Our project focuses on how to improve a LinkedIn profile to appeal to more people, and specifically to companies, job recruiters, and future investors. <br>
 We provide a service that allows users to monitor their profiles' success using AI-Powered tools. <br>
 *Profile Pro* is a tool that analyzes an existing LinkedIn profile and suggests changes that could make the profile more informative about the person behind it by suggesting changes to various fields in the profile.
 
