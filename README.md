@@ -8,7 +8,7 @@
 # Contents
 - [Overview](#Overview)
 - Running the Code:
-  - [Building *Profile Pro*](#Building-*Profile-Pro*)
+  - [Building *Profile Pro*](#Building-Profile-Pro)
     - [Scraping](#Scraping)
     - ["Meta-Job" Classification](#"Meta-Job"-Classification)
     - [Profile Score Calculation](#Profile-Score-Calculation)
