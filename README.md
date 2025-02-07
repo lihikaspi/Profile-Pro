@@ -7,14 +7,19 @@
 
 # Contents
 - [Overview](#Overview)
-- [Running The Code](#Running-The-Code)
-  - [Scraping](#Scraping)
-  - ["Meta-Job" Classification](#"Meta-Job"-Classification)
-  - [Profile Score Calculation](#Profile-Score-Calculation)
-  - [Data Preprocessing](#Data-Preprocessing)
-  - [LLM Prompt Engineering](#LLM-Promp-Engineering)
-  - [Profile Pro](#Profile-Pro) 
-
+- Running the Code:
+  - [Building *Profile Pro*](#Building-*Profile-Pro*)
+    - [Scraping](#Scraping)
+    - ["Meta-Job" Classification](#"Meta-Job"-Classification)
+    - [Profile Score Calculation](#Profile-Score-Calculation)
+    - [Data Preprocessing](#Data-Preprocessing)
+    - [LLM Prompt Engineering](#LLM-Promp-Engineering)
+    - [Profile Pro](#Profile-Pro) 
+  - [Evaluating New Profiles](#Evaluating-New-Profiles)
+    - [Prompt Engineering](#Promp-Engineering)
+    - [User Process](#User-Process)
+    - [User Input Optimization](#User-Input-Optimization)
+    
 
 # Overview
 Our project focuses on how to improve a LinkedIn profile to appeal to more people and, specifically, companies, job recruiters, and future investors. <br>
@@ -22,8 +27,8 @@ We provide a service that allows users to monitor their profiles' success using 
 *Profile Pro* is a tool that analyzes an existing LinkedIn profile and suggests changes that could make the profile more informative about the person behind it by suggesting changes to various fields in the profile.
 
 
-# Running The Code
-The project contains a python file for the scraping process and 5 Jupyter notebooks that should be run in this specified order since files saved by one notebook are needed for the next one. <br>
+# Building *Profile Pro*
+This part of the project handles the creation of our newly developed tool and contains a python file for the scraping process and 5 Jupyter notebooks that should be run in this specified order since files saved by one notebook are needed for the next one. <br>
 For each notebook description we added the cells numbers where you'll need to change the file paths in order to run the code.
 
 ## Scraping
@@ -53,12 +58,17 @@ The code takes the dataset containing the profile scores and prepares a new file
 Input - cell 2: path to the profile scores parquet saved in the "profiles_score_calculation" notebook.  <br> 
 Output - cell 8: path to the the parquet file containing profile ids, the features vectors and the real scores.
 
+#### Notice: the next two notebooks should run interchangeably
 ## LLM Promp Engineering
-...
+The code takes 200 average profiles from the data and generates new about sections for them, and predicting their score before and after the optimization.
 
 **File paths to change:** <br>
-Input - cell 2: path to the profile scores parquet saved in the "profiles_score_calculation" notebook.  <br> 
-Output - cell IDFK?? : ???????????????
+Input - cell 2: path to the profile scores parquet saved in the "profiles_score_calculation" notebook.  <br>
+Output - cell 3: path to save the sample of the "good" profiles <br>
+Input - cell 10: path to the sample of good profiles used for checking similar profiles.<br>
+Input - cell 12: path to the profiles dataset<br>
+Loading the classification model - cell 14: path to the trained multilayer perceptron model. **Notice: the model is saved in the "Profile_Pro" notebook**<br>
+
 
 ## Profile Pro
 The code trains and evaluates the score classification model, offers suggestions for the bad profiles and re-evaluates the changed and optimized profiles profiles
@@ -68,3 +78,20 @@ Input - cell 4: path to the profiles dataset and to the preprocessed data saved 
 Saving and loading the classification model - cells 12 and 17: path to save the trained multilayer perceptron model <br>
 Output - cell **26 PROBABLY**: path to the the parquet file containing the suggestion for each user.
 
+# Evaluating New Profiles
+This part of the project handles the optimization of new profiles and contains 2 python files and a Jupyter notebook.
+
+## Prompt Engineering
+This file contains python function helpful for the process of evaluating new LinkedIn profiles and optimizing them.
+
+**File paths to change:** <br>
+Input - lines 92 and 93: paths to the profiles dataset and to the profile scores parquet saved in the "profiles_score_calculation" notebook. <br>
+Output - line 106: path to save the sample of the "good" profiles <br>
+Input - lines 200 and 253: path to the sample of the "good" profiles saved in the "LLM_Promp_Engineering" notebook.
+
+## User Process
+The file consists of a python function that given profiles processes the features vestors for the classfication model
+
+## User Input Optimization
+The file shows an example of how to use the *Profile Pro* tool. <br>
+the first cell is the "Prompt_Engineering" file.
