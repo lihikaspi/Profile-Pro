@@ -58,7 +58,7 @@ The code takes the dataset containing the profile scores and prepares a new file
 Input - cell 2: path to the profile scores parquet saved in the "profiles_score_calculation" notebook.  <br> 
 Output - cell 8: path to the the parquet file containing profile ids, the features vectors and the real scores.
 
-#### Notice: the next two notebooks should run interchangeably
+### Notice: the next two notebooks should run interchangeably
 ## LLM Promp Engineering
 The code takes 200 average profiles from the data and generates new about sections for them, and predicting their score before and after the optimization.
 
